@@ -1,0 +1,1 @@
+sass --watch sass/sourse.scss:css/honar.css

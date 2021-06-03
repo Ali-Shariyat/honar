@@ -1,0 +1,83 @@
+@mixin backgroundColor($Color) {
+  background-color: $Color;
+}
+
+@mixin fontFace($path,$NameFormat,$NameOfFontFamily:false,$fontStyle:normal,$fontWeight:normal) {
+  @font-face {
+    font-family: $NameOfFontFamily;
+    font-style: $fontStyle;
+    font-weight: $fontWeight;
+    src: url('#{$path}/eot/#{$NameFormat}.eot?#iefix') format('embedded-opentype'), url('#{$path}/woff/#{$NameFormat}.woff') format('woff'), url('#{$path}/woff2/#{$NameFormat}.woff2') format('woff2'), url('#{$path}/ttf/#{$NameFormat}.ttf') format('truetype');
+  }
+}
+
+@mixin transition($TransitionS) {
+    transition: $TransitionS;
+    -webkit-transition: $TransitionS;
+    -ms-transition: $TransitionS;
+    -moz-transition: $TransitionS;
+
+}
+
+@mixin transform($TransformS) {
+  @if $TransformS {
+    transform: $TransformS;
+    -webkit-transform: $TransformS;
+    -ms-transform: $TransformS;
+    -moz-transform: $TransformS;
+  }
+}
+
+@mixin border-radius($border-radius) {
+  @if $border-radius {
+    border-radius: $border-radius;
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+  }
+}
+
+@mixin Before() {
+  content: "";
+  position: absolute;
+}
+
+$L: 1200px;
+$M: 992px;
+$S: 600px;
+$xs: 480px;
+@mixin MediaQuery($canvas) {
+  @if $canvas == L {
+    @media only screen and (max-width: $L) {
+      @content
+    }
+  }
+  @if $canvas == LB {
+    @media only screen and (min-width: $M) {
+      @content
+    }
+  }@else if $canvas == MB {
+    @media only screen and (min-width: $M) {
+      @content
+    }
+  } @else if $canvas == M {
+    @media only screen and (max-width: $M) {
+      @content
+    }
+  } @else if $canvas == S {
+    @media only screen and (max-width: $S) {
+      @content
+    }
+  } @else if $canvas == xs {
+    @media only screen and (max-width: $xs) {
+      @content
+    }
+  } @else if $canvas == Ms {
+    @media only screen and (min-width: 500px) and (max-width: $S) {
+      @content
+    }
+  }@else{
+  @media only screen and #{$canvas} {
+    @content
+  }
+}
+}

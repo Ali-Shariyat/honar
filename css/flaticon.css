@@ -1,0 +1,54 @@
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-double-down-arrows:before { content: "\f100"; }
+.flaticon-diagram:before { content: "\f101"; }
+.flaticon-menu:before { content: "\f102"; }
+.flaticon-list:before { content: "\f103"; }
+.flaticon-shopping-cart-1:before { content: "\f104"; }
+.flaticon-shopping-cart:before { content: "\f105"; }
+.flaticon-plus:before { content: "\f106"; }
+.flaticon-pencil-edit-button:before { content: "\f107"; }
+.flaticon-checkbox-pen-outline:before { content: "\f108"; }
+.flaticon-add-a-contact-on-phone-interface-symbol-of-a-user-with-a-plus-sign:before { content: "\f109"; }
+.flaticon-new-user:before { content: "\f10a"; }
+.flaticon-edit:before { content: "\f10b"; }
+.flaticon-favorite-heart-button:before { content: "\f10c"; }
+.flaticon-homepage:before { content: "\f10d"; }
+.flaticon-home:before { content: "\f10e"; }
+.flaticon-user:before { content: "\f10f"; }
+.flaticon-man-user:before { content: "\f110"; }
+.flaticon-google-plus-logo-1:before { content: "\f111"; }
+.flaticon-twitter-logo-silhouette:before { content: "\f112"; }
+.flaticon-facebook-letter-logo:before { content: "\f113"; }
+.flaticon-line:before { content: "\f114"; }
+.flaticon-linked-in-logo-of-two-letters:before { content: "\f115"; }
+.flaticon-three:before { content: "\f116"; }
+.flaticon-camera:before { content: "\f117"; }
+.flaticon-google-plus-logo:before { content: "\f118"; }
+.flaticon-logo:before { content: "\f119"; }
+.flaticon-users:before { content: "\f11a"; }
+.flaticon-share:before { content: "\f11b"; }
+.flaticon-technology:before { content: "\f11c"; }
+.flaticon-network:before { content: "\f11d"; }
+.flaticon-like:before { content: "\f11e"; }
+.flaticon-pinterest:before { content: "\f11f"; }
+.flaticon-interface:before { content: "\f120"; }
+.flaticon-shopping-basket:before { content: "\f121"; }
+.flaticon-speed:before { content: "\f122"; }
+.flaticon-avatar:before { content: "\f123"; }
